@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechZone - Gələcəyin Texnologiyası</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #0f0f1a;
+      font-family: 'Roboto', sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #00ffe7, #0077ff);
+      padding: 30px 20px;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      letter-spacing: 4px;
+      color: #0f0f1a;
+      text-shadow: 0 0 15px #00ffe7, 0 0 20px #0077ff;
+      animation: pulse 3s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { text-shadow: 0 0 15px #00ffe7, 0 0 20px #0077ff; }
+      100% { text-shadow: 0 0 25px #00fff0, 0 0 35px #00aaff; }
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ffe7aa;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #00ffe7ff;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #00ffe7;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .card p {
+      color: #bbb;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a13;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: auto;
+      box-shadow: inset 0 1px 0 #111;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+      main {
+        padding: 20px 10px;
+        gap: 15px;
+      }
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>TechZone - Gələcəyin Texnologiyası</header>
+  <main>
+    <article class="card">
+      <h3>AI və Süni İntellektin Gələcəyi</h3>
+      <p>AI texnologiyaları həyatımızı dəyişdirir. Yeni alqoritmlər və maşın öyrənmə modelləri sürətlə inkişaf edir və tətbiq sahələri genişlənir.</p>
+    </article>
+    <article class="card">
+      <h3>5G və İnternet Sürətləri</h3>
+      <p>5G şəbəkələri daha sürətli və etibarlı internet təcrübəsi təqdim edir. Bu texnologiya yeni imkanlar açır və mobil cihazların performansını artırır.</p>
+    </article>
+    <article class="card">
+      <h3>Kiber Təhlükəsizlik</h3>
+      <p>Online təhlükəsizlik hər zamankindən daha vacibdir. Şəxsi məlumatların qorunması və hücumlardan müdafiə üçün yeni üsullar tətbiq olunur.</p>
+    </article>
+    <article class="card">
+      <h3>Quantum Hesablama</h3>
+      <p>Kvantal kompüterlər ən mürəkkəb problemləri sürətlə həll edə biləcək gücə malikdir. Bu sahə gələcəyin hesablama standartlarını müəyyənləşdirəcək.</p>
+    </article>
+    <article class="card">
+      <h3>Bulud Texnologiyaları</h3>
+      <p>Bulud xidmətləri şirkətlərə məlumatlarını daha effektiv idarə etməyə imkan verir. İnfrastrukturun elastikliyi və qənaəti əsas üstünlüklərdəndir.</p>
+    </article>
+    <article class="card">
+      <h3>Elektrikli Avtomobillər</h3>
+      <p>Elektrikli nəqliyyat vasitələri ətraf mühitə təsiri azaltmaqda mühüm rol oynayır. Yeni batareyalar və şarj infrastrukturunun inkişafı sürətlənir.</p>
+    </article>
+  </main>
+  <footer>© 2025 TechZone. Bütün hüquqlar qorunur.</footer>
+</body>
+</html>
